@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/relv_1">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/relv_1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relv_2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:text="Payment options"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/radiogrp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_cod"
+                        android:layout_marginLeft="5dp"
+                        android:textAllCaps="false"
+                        android:text="Cash on Delivery"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_debit_card"
+                        android:layout_marginLeft="5dp"
+                        android:textAllCaps="false"
+                        android:text="Credit/Debit card"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_upi"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="5dp"
+                        android:text="Upi"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Accept_btn"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_bg"
+                        android:text="Accept"/>
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

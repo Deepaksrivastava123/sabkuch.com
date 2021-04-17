@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_New_Customer"
+        android:icon="@drawable/newuser"
+        android:title="New customer" />
+
+    <item
+        android:id="@+id/nav_Khatabook"
+        android:icon="@drawable/khatabook"
+        android:title="Khatabook" />
+
+    <item
+        android:id="@+id/search_Customer"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search customer" />
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/help"
+        android:title="Help" />
+
+</menu>

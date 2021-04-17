@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/primaryTextColor">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD CUSTOMER"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firstname"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+                <EditText
+                    android:id="@+id/et_FirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="abc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lastname"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+                <EditText
+                    android:id="@+id/et_LastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="abc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email(Optional)"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+                <EditText
+                    android:id="@+id/et_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="abc@gmail.com"/>
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Forget Password"-->
+                <!--                    android:layout_gravity="end"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:textColor="@color/primaryTextColor"/>-->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_Add"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_button_bk"
+
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_Cancel"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/login_button_bk"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+               </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
